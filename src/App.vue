@@ -18,7 +18,10 @@
   
   <router-link to="/">홈 </router-link>
   <router-link to="/list">리스트 페이지</router-link>
+
+  <div class="mt-4"> <!--부트스트랩 문법: mt-->
   <router-view :블로그글="블로그글"></router-view>
+  </div>
 
   <!-- <List :블로그글="블로그글" /> -->
 
@@ -66,5 +69,10 @@ export default {
 3. props전송은 <router-view>에 적용하기
   >> <router-view : 작명="데이터명">
 
+상세페이지 백만게 만들기
+라우터>>루트>> /detail/x >> x번 개시물보여주기
+/detail/:id >>파라미터 문법 >>문자를 넣으면 됨
+$route.params.id >>id이름의 파라미터를 가져온다
+/detail/:id(정규식) >>뷰 라우터 4 공식페이지 참고>>뷰라우터 4관련으로 검색할것
 
 -->
