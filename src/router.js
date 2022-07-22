@@ -44,3 +44,22 @@ const router = createRouter({
 });
 
 export default router; 
+
+//createWebHistory >>createWebHashHistory
+//변환시 URL에 모두 #이 붙은채로 시작
+//이렇게 안하고 하면 뷰가 라우팅 하기전에 서버가 페이지를 보여주려
+//할수도 있다. 이걸 방지하기 위해서는 뷰에게 맡기라는 기능개발 필요
+
+//변환하고 나면 #뒤의 내용들은 절대 서버로 전달되지 않는다.
+//서버가 없다면 hash도 괜찮다.
+
+//navigation guard
+//URL로 접속할때 코드실행이 필요할 경우
+//라우팅 전(네비게이션 전)에 hook처럼 사용
+//routes=[{
+//  
+//  beforeEnter: (to, from, next) => {
+    // ...
+ // }  
+  
+//}]
