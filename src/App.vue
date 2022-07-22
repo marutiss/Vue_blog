@@ -75,4 +75,7 @@ export default {
 $route.params.id >>id이름의 파라미터를 가져온다
 /detail/:id(정규식) >>뷰 라우터 4 공식페이지 참고>>뷰라우터 4관련으로 검색할것
 
+$route 현재경로
+$router 페이지 이동관련
+
 -->
